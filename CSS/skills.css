@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url(./utilities.css);
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.content .skill {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content .skill .circular {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.content .skill .circular .inner {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background-color: #0b0b0b;
+    border-radius: 100%;
+}
+
+.content .skill .circular .number {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 12;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(152,152,152);
+}
+
+.content .skill .circular .circle .bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+    transform: rotate(250deg);
+}
+.two.bar{
+    clip:unset;
+}
+.three.bar{
+    clip: rect(40px, 100px, 100px, 30px);
+}

@@ -1,0 +1,178 @@
+/* .btn{
+    padding: 0.8rem 2.6rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-width: 2px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s ease;
+    border: 1px solid transparent;
+}
+.btn-primary{
+    background-color: #adff2f;
+    border-color: #adff2f;
+    color: #212529;
+    font-weight: 600;
+} */
+h1.heading{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+h3.sub-heading{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+h2,h3{
+    text-align: center;
+   color: #fff;
+}
+span.text{
+    color: black;
+    font-size: 0.9rem;
+    line-height: 2.3;
+}
+p.text{
+    padding: 0 7vw 0 7vw;
+}
+p{
+    color: rgb(153,153,153);
+}
+p{
+    color: rgb(129,128,128);
+}
+.design{
+    position: relative;
+}
+
+.btn {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn a:hover span {
+    width: 100%;
+}
+
+.btn a:hover {
+    color: black;
+}
+.B-btn {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.B-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: black;
+    border: .5px solid black;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.B-btn a span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.B-btn a:hover span {
+    width: 100%;
+}
+
+.B-btn a:hover {
+    color: #fff;
+}
+@media screen and (min-width:280px) and (max-width:1080px) {
+    .btn {
+        margin-top: 2rem;
+    }
+    .btn a {
+        width: 115px;
+    }
+}
+.home-section .scroll-down{
+    position: absolute;
+    bottom: 0;
+    font-size: 4rem;
+    animation: scrollDown 2s ease infinite;
+}
+@keyframes scrollDown{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+.home-section .scroll-down i{
+    color: #fff;
+}
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+    margin-bottom: 6rem;
+    text-align: center;
+    position: relative;
+}
+.spring{
+    display: flex;
+    align-items: center;
+    margin: 6rem 0;
+}
+.coil{
+    border-top: white dashed 0.01rem;
+    width: 49.75%;
+}
+.bar{
+    width: 0.5%;
+    height: 7rem;
+    background-color: #fff;
+}
+.spring.right{
+    flex-direction: row-reverse;
+}

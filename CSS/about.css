@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url(./utilities.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.about {
+    position: relative;
+    height: 100vh;
+
+}
+.about .content{
+    height: 200PX;
+    padding: 0%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .title-container{
+    display: flex;
+    align-self:center;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.container.detail{
+    position: relative;
+}
+
+.detail .image img{
+    height: 25rem;
+    width: 50rem;
+    object-fit: cover;
+}
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+}
+.play i{
+    font-size: 10rem;
+}
+@media screen and (min-width:280px) and (max-width:1080px) {
+    body{
+        overflow-x: hidden;
+    }
+    .about{
+        margin: 0 10vw;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .detail .image img{
+        width: 100% !important;
+    }
+} */

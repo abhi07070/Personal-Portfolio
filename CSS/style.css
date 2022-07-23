@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url(./utilities.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    padding: 0 10vw 0 10vw;
+}
+
+.nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.logo-name h2 {
+    font-size: 1.6rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    color: #fff;
+    z-index: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 0.3rem !important;
+}
+
+.contact-info p {
+    font-size: 1.3rem;
+}
+
+.contact-info i {
+    margin-left: 0.7rem !important;
+}
+
+nav ul i {
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    font-size: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMAGES/Front-Pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-section .home-section-details {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color:#fff;
+}
+
+p {
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#slideNav {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #fff;
+    border-left: 2px solid red;
+    z-index: 11;
+    transition: 0.5s;
+}
+
+@media screen and (min-width:280px) and (max-width:1080px) {
+    .btn a {
+        width: 115px;
+    }
+    /* .home-section .home-section-details {
+        height: 40%;
+    } */
+    h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width:435px) and (max-width:660px) {
+    .container {
+        padding: 0 4vw 0 4vw;
+    }
+
+    .nav-info {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .logo-name h2 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .container {
+        padding: 0 3vw 0 3vw;
+    }
+
+    .contact-info i {
+        margin-left: 0rem !important;
+    }
+
+    .contact-info #menuBtn i {
+        margin-left: 0rem !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav-info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 10vh;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
